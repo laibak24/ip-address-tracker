@@ -171,6 +171,10 @@ body {
 
 /* Mobile (375px) */
 @media only screen and (max-width: 375px) {
+    body {
+        overflow: auto;
+    }
+
     .header {
         height: 150px;
     }
@@ -211,6 +215,43 @@ body {
     .map {
         height: 250px;
         margin-top: 15px;
+    }
+}
+
+/* Tablet (768px) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .header {
+        height: 180px;
+    }
+
+    .title {
+        font-size: 22px;
+    }
+
+    .submit-box {
+        width: 70%;
+    }
+
+    .search-box {
+        width: 85%;
+    }
+
+    .submit {
+        height: 35px;
+        width: 35px;
+    }
+
+    .results {
+        width: 85%;
+        top: 140px;
+    }
+
+    .output, .answers {
+        font-size: 12px;
+    }
+
+    .map {
+        height: calc(100vh - 180px);
     }
 }
 
